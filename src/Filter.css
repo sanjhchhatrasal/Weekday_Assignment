@@ -1,0 +1,74 @@
+
+.filters{
+    display: flex;
+    padding: 1vw 10vw;
+    gap: 0.6vw;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+}
+
+.search{
+    padding: 0.7vw 1.7vw;
+    border-radius: 0.5vw;
+    color: #999;
+    font-size: 0.9vw;
+    border: 2px solid #dadada;
+}
+
+
+@media (max-width: 1280px){
+    .filters{
+        padding: 1vw 2vw;
+        margin-right: 2vw;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+    .select{
+        padding: 1vw 0.4vw;
+        padding-right: 2.5vw;
+        font-size: 1.2vw;
+    }
+    .search{
+        font-size: 1.5vw;
+    }
+    
+}
+@media (max-width: 768px){
+    .filters{
+        padding: 1vw;
+        gap: 1vw;
+    }
+    .select{
+        padding: 1vw 0vw;
+        padding-right: 1.5vw;
+        font-size: 1.6vw;
+    }
+    .search{
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 640px){
+    .filters{
+        padding: 1vw;
+        margin-right: 5vw;
+        gap: 1.2vw;
+    }
+    .select{
+        font-size: 1.9vw;
+    }
+    .search{
+        font-size: 2vw;
+    }
+}
+@media (max-width: 440px){
+    .filters{
+        padding: 1vw 5vw;
+    }
+    .select{
+        font-size: 2.3vw;
+    }
+    .search{
+        font-size: 3.7vw;
+    }
+}

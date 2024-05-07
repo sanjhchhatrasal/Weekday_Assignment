@@ -40,11 +40,6 @@ const filterReducer = (state, action) => {
           }
           return false; // If job.companyName is undefined or not a string, exclude it from the filter
         });
-        /*  if (job.companyName && typeof job.companyName === 'string') {
-                                      return job.companyName.toLowerCase().includes(text.toLowerCase());
-                                    }
-                                    
-                                  }; */
       }
       console.log("All Jobs:", all_jobs); // Add this line to log all_jobs value
       console.log("Filtered Jobs:", tempFilterJob);

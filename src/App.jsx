@@ -1,12 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './App.css';
 import { useCardContext } from './Context/CardContext';
+import { useFilterContext } from './Context/FilterContext';
+import Filter from './Filter';
 
 function App() {
   // useState for description 
   const [showFullDescription, setShowFullDescription] = useState(false);
   // useCardContext for showing jobs
   const { isLoading, isError, jobs  } = useCardContext();
+
+  const { filter_jobs } = useFilterContext();
+  console.log(filter_jobs)
 
 //loading
   if (isLoading) {
@@ -29,9 +34,9 @@ const handleToggleDescription = (id) => {
   return (  
     <div className='main'>
       <div className='container'>
-      {/*   <div className="filters">
+         <div className="filters">
           <Filter />
-        </div> */}
+        </div> 
 
 {/* All jobs */}
  {jobs && jobs.jdList && ( 
