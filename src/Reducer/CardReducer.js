@@ -11,7 +11,7 @@ const CardReducer = (state, action) => {
                 return {
                     ...state,
                     isLoading: false,
-                    products: action.payload
+                    jobs: action.payload
                 };
             
             case "API_ERROR":

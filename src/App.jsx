@@ -6,7 +6,7 @@ function App() {
   // useState for description 
   const [showFullDescription, setShowFullDescription] = useState(false);
   // useCardContext for showing jobs
-  const { isLoading, isError, products  } = useCardContext();
+  const { isLoading, isError, jobs  } = useCardContext();
 
 //loading
   if (isLoading) {
@@ -34,10 +34,10 @@ const handleToggleDescription = (id) => {
         </div> */}
 
 {/* All jobs */}
- {products && products.jdList && ( 
+ {jobs && jobs.jdList && ( 
   <div className='containers'>
 
-   {products.jdList.map((job, index) => (
+   {jobs.jdList.map((job, index) => (
        <div key={index} className='card'>
         <div className="card-top">
            <div className="company-img">

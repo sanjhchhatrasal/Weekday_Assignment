@@ -19,7 +19,7 @@ const body = {
 const initialState = {
     isLoading: false,
     isError: false,
-    products: []
+    jobs: []
 };
 
 
@@ -31,9 +31,9 @@ const AppProvider = ({children}) => {
         dispatch ({ type : "SET_LOADING" });
        try {
          const response = await axios.post(API, body, { headers: myHeaders });
-         const products = await response.data;
-         console.log( products);
-         dispatch({ type: "SET_API_DATA", payload: products });
+         const jobs = await response.data;
+         console.log( jobs);
+         dispatch({ type: "SET_API_DATA", payload: jobs });
        } catch (error) {
         console.error("API Error:", error); // Log API error for debugging
         dispatch({ type: "API_ERROR" });
