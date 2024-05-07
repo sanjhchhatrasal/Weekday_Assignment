@@ -2,10 +2,10 @@
 # Weekday Assignment
 This repository contains the codebase for the Weekday Assignment project.
 
-Overview
+# Overview
 Weekday Assignment is a web application that provides [brief description of the project and its purpose]. It is built using [technologies used in the project, such as React, Redux Toolkit, etc.].
 
-Installation
+# Installation
 Before running the application locally, ensure you have the following prerequisites installed:
 
 Node.js
