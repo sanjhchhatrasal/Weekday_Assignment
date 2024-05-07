@@ -36,7 +36,7 @@ To build the application for production deployment, use:
 npm run build
  or
 yarn build
-Contributing
+# Contributing
 Contributions to the project are welcome. If you want to contribute, please follow these steps:
 
 Fork the repository.
@@ -45,7 +45,7 @@ Make your changes.
 Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature/my-feature).
 Create a new Pull Request.
-License
+# License
 This project is licensed under the [License Name]. See the LICENSE file for more details.
 
 # Contact
