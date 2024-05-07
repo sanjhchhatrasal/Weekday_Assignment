@@ -18,6 +18,7 @@ function App() {
   } 
   
 
+
 // Change handleToggleDescription to accept index directly
 const handleToggleDescription = (id) => {
   setShowFullDescription(prev => !prev);
@@ -25,9 +26,7 @@ const handleToggleDescription = (id) => {
 };
 
 
-  return (
-    
-   
+  return (  
     <div className='main'>
       <div className='container'>
       {/*   <div className="filters">
@@ -35,10 +34,10 @@ const handleToggleDescription = (id) => {
         </div> */}
 
 {/* All jobs */}
-
-{products && products.jdList && (
+ {products && products.jdList && ( 
   <div className='containers'>
-    {products.jdList.map((job , index) => (
+
+   {products.jdList.map((job, index) => (
        <div key={index} className='card'>
         <div className="card-top">
            <div className="company-img">
@@ -80,12 +79,6 @@ const handleToggleDescription = (id) => {
       </div> 
       
     ))}
-
-
-            
-        
-          
-
   </div>
         )}
          
