@@ -10,6 +10,11 @@ const initialState = {
     all_jobs: [],
     filters : {
         text: "",
+        jobRole: "all",
+        maxJdSalary: "",
+        minExp: "",
+        location: "",
+        companyName: "",
     },
 };
 

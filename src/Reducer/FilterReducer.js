@@ -30,7 +30,7 @@ const filterReducer = (state, action) => {
       let { all_jobs } = state;
       let tempFilterJob = [...all_jobs];
 
-      const { text } = state.filters;
+      const { text, jobRole, maxExp,  location, minJdSalary } = state.filters;
 
       if (text) {
         tempFilterJob = tempFilterJob.filter((job) => {
@@ -43,6 +43,29 @@ const filterReducer = (state, action) => {
       }
       console.log("All Jobs:", all_jobs); // Add this line to log all_jobs value
       console.log("Filtered Jobs:", tempFilterJob);
+
+      if(jobRole !== "all"){
+        tempFilterJob = tempFilterJob.filter((job) => {
+          return job.jobRole === jobRole;
+        })
+      }
+
+      if(maxExp !== "all"){
+        tempFilterJob = tempFilterJob.filter((job) => {
+          return job.maxExp === maxExp;
+        });
+      };
+      if(location !== "all"){
+        tempFilterJob = tempFilterJob.filter((job) => {
+          return job.location === location;
+        });
+      };
+
+      if(minJdSalary !== "all"){
+        tempFilterJob = tempFilterJob.filter((job) => {
+          return job.minJdSalary === minJdSalary;
+        });
+      };
 
       return {
         ...state,

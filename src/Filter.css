@@ -15,6 +15,31 @@
     border: 2px solid #dadada;
 }
 
+.filters-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 2vw;
+}
+
+.filters-div h3{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.filters-div select{
+    padding: 0.4vw 5vw;
+    border: 1px solid #dadada;
+    border-radius: 0.5vw;
+}
+
+.filters-div input{
+    padding: 0.4vw 1vw;
+    border: 1px solid #dadada;
+    border-radius: 0.5vw;
+}
+
 
 @media (max-width: 1280px){
     .filters{

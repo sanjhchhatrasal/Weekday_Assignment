@@ -12,7 +12,7 @@ const myHeaders = {
 };
 
 const body = {
-    "limit": 900,
+    "limit": 947,
     "offset": 0
 };
 
@@ -32,7 +32,7 @@ const AppProvider = ({children}) => {
        try {
          const response = await axios.post(API, body, { headers: myHeaders });
          const jobs = await response.data;
-         console.log( jobs);
+         console.log( "ALL-Jobs" ,jobs);
          dispatch({ type: "SET_API_DATA", payload: jobs });
        } catch (error) {
         console.error("API Error:", error); // Log API error for debugging
