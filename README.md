@@ -21,12 +21,13 @@ Install dependencies:
 npm install
  or
 yarn install
+#
 Running the Application
 To start the development server, run:
 
 npm run dev
  or
-yarn start
+yarn run dev
 The application will be accessible at http://localhost:5173.
 
 # Building for Production
