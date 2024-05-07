@@ -83,7 +83,7 @@
   .card-top .company h2{
   font-size: 1vw;
   font-weight: 400;
-  margin: -0.2vw 0;
+/*   margin: -0.2vw 0; */
   text-transform: capitalize;
   }
   .card-top .company h3{
@@ -99,7 +99,7 @@
     font-size: 1vw;
     font-weight: 400;
     color: #666;
-    margin: 0.8vw 0;
+    margin: 1vw 0;
     }
 
 
@@ -112,7 +112,8 @@
       }
       .about h2{
       font-size: 1vw;
-      margin-bottom: 0vw;
+      margin-bottom: 1vw;
+      margin-top: 0.2vw;
       }
       .about-desc{
       font-size: 0.93vw;
@@ -129,7 +130,7 @@
       .exp p{
       font-size: 0.95vw;
       font-weight: 500;
-      margin-top: -1.4vw ;
+      /* margin-top: -1.4vw ; */
       }
 
 
@@ -142,7 +143,7 @@
         color: blue;
         background-color: transparent;
         cursor: pointer;
-        margin-bottom: -0.5vw;
+        /* margin-bottom: -0.5vw; */
         }
 
 
@@ -379,17 +380,17 @@
   
   .exp h6{
       font-size: 3.4vw;
-      margin-top: 2vw;
+      /* margin-top: 2vw; */
   }
   .exp p{
     font-size: 3.4vw;
-    margin-top: -5vw;
+    /* margin-top: -5vw; */
   }
   .btn{
     font-size: 3.8vw;
   }
   .apply{
-     margin-bottom: 3vw; 
+     /* margin-bottom: 3vw;  */
      padding: 2vw;
   }
 }
