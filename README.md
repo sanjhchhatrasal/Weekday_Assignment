@@ -12,36 +12,26 @@ Node.js
 npm or yarn
 To clone the repository, use the following command:
 
-bash
-Copy code
 git clone https://github.com/sanjhchhatrasal/Weekday_Assignment.git
 Navigate to the project directory:
 
-bash
-Copy code
 cd Weekday_Assignment
 Install dependencies:
 
-bash
-Copy code
 npm install
  or
 yarn install
 Running the Application
 To start the development server, run:
 
-bash
-Copy code
-npm start
+npm run dev
  or
 yarn start
-The application will be accessible at http://localhost:3000.
+The application will be accessible at http://localhost:5173.
 
-Building for Production
+# Building for Production
 To build the application for production deployment, use:
 
-bash
-Copy code
 npm run build
  or
 yarn build
@@ -57,7 +47,7 @@ Create a new Pull Request.
 License
 This project is licensed under the [License Name]. See the LICENSE file for more details.
 
-Contact
+# Contact
 For any questions or feedback, feel free to contact Sanjh Chhatrasal at sanjhchhatrasal@gmail.com.
 
 
