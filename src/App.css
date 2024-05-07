@@ -1,0 +1,395 @@
+
+/* main-div style */
+.main{
+  width: 100vw;
+  position: relative;
+  color: rgb(37, 3, 11);
+  font-family: Gilroy;
+  overflow-x: hidden;
+}
+
+/* Loading style */
+.loading{
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container-div style */
+
+.containers{
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: center;
+  }
+
+  /* card-div style */
+
+  .card{
+    width: 25vw;
+    padding: 1.2vw;
+    color: #666;
+    margin: 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.4vw;
+    transition: all ease 0.1s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add shadow with a blur effect */
+    }
+
+    /* card-div hover animation */
+    
+    .card:hover{
+    scale: 1.01;
+    }
+
+
+    /* card-div's top-bar style */
+
+    .card-top{
+      height: 12vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      }
+      
+      .card .company-img{
+        height: 55%;
+        width: 12%;
+      }
+      
+      img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+      }
+
+      
+.card-top .company{
+  text-align: left;
+  margin-left: 1vw;
+  }
+  
+  .card-top .company h1{
+  font-size: 0.95vw;
+  letter-spacing: 0.1vw;
+  color: #959494;
+  font-weight: 400;
+  }
+  
+  .card-top .company h2{
+  font-size: 1vw;
+  font-weight: 400;
+  margin: -0.2vw 0;
+  text-transform: capitalize;
+  }
+  .card-top .company h3{
+  font-size: 0.9vw;
+  font-weight: 400;
+  text-transform: capitalize;
+  }
+
+
+  /* salary-div style */
+
+  .salary{
+    font-size: 1vw;
+    font-weight: 400;
+    color: #666;
+    margin: 0.8vw 0;
+    }
+
+
+    /* about section of company */
+
+    .about h1{
+      font-size: 1.1vw;
+      font-weight: 500;
+      text-align: left;
+      }
+      .about h2{
+      font-size: 1vw;
+      margin-bottom: 0vw;
+      }
+      .about-desc{
+      font-size: 0.93vw;
+      line-height: 1.6;
+      }
+
+      /* experience section */
+
+      .exp h6{
+        font-size: 0.9vw;
+        font-weight: 500;
+        color: #666;
+      }
+      .exp p{
+      font-size: 0.95vw;
+      font-weight: 500;
+      margin-top: -1.4vw ;
+      }
+
+
+      /* show more and less button design */
+
+      .btn{
+        padding: 0.5vw;
+        font-size: 1vw;
+        border: 0;
+        color: blue;
+        background-color: transparent;
+        cursor: pointer;
+        margin-bottom: -0.5vw;
+        }
+
+
+        /* apply button style */
+
+        .apply{
+          padding: 1vw ;
+          margin-top: 1vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0.5vw;
+          cursor: pointer;
+          background-color: rgb(52, 238, 210);
+          }
+
+          .apply a{
+          text-decoration: none;
+          color: #000;
+          font-weight: 500;
+          }
+
+/* styles for screens up to 1280 pixels wide go here */
+@media (max-width: 1280px){
+
+.card{
+  width: 30vw;
+   }
+   .card-top{
+    height: 13vh;
+  }
+  
+  .card .company-img{
+      height: 55%;
+  }
+  
+  .card-top .company h1{
+    font-size: 1.3vw;
+  }
+  
+  .card-top .company h2{
+    font-size: 1.4vw;
+  }
+  .card-top .company h3{
+    font-size: 1.3vw;
+  }
+
+  .salary{
+    font-size: 1.4vw;
+  }
+  
+  .about h1{
+    font-size: 1.7vw;
+    margin-top: 1vw;
+  }
+  .about h2{
+    font-size: 1.3vw;
+    margin-top: 0.5vw;
+  }
+  .about-desc{
+    margin-top: 1vw;
+    font-size: 1.35vw;
+  }
+  
+  .exp h6{
+      font-size: 1.25vw;
+  }
+  .exp p{
+    font-size: 1.3vw;
+  }
+  .btn{
+    font-size: 1.4vw;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+  }
+}
+
+/* styles for screens up to 768 pixels wide go here */
+@media (max-width: 768px){
+.container{
+  gap: 3vw;
+}
+.card{
+  width: 45vw;
+   }
+   .card-top{
+    height: 15vh;
+  }
+  
+  .card .company-img{
+      height: 50%;
+      width: 14%;
+  }
+  
+  .card-top .company h1{
+    font-size: 1.7vw;
+  }
+  
+  .card-top .company h2{
+    font-size: 2vw;
+  }
+  .card-top .company h3{
+    font-size: 1.6vw;
+  }
+
+  .salary{
+    font-size: 1.8vw;
+  }
+  
+  .about h1{
+    font-size: 2.1vw;
+    margin-top: 1.2vw;
+  }
+  .about h2{
+    font-size: 1.8vw;
+    margin-top: 0.7vw;
+  }
+  .about-desc{
+    margin-top: 1.3vw;
+    font-size: 1.8vw;
+    line-height: 1.6;
+  }
+  
+  .exp h6{
+      font-size: 1.7vw;
+  }
+  .exp p{
+    font-size: 1.9vw;
+  }
+  .btn{
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  
+}
+
+/* styles for screens up to 640 pixels wide go here */
+@media (max-width: 640px){
+
+.container{
+  gap: 4vw;
+}
+.card{
+  width: 50vw;
+   }
+  
+  .card .company-img{
+      height: 45%;
+      width: 15%;
+  }
+  
+  .card-top .company h1{
+    font-size: 2.3vw;
+  }
+  
+  .card-top .company h2{
+    font-size: 2.7vw;
+  }
+  .card-top .company h3{
+    font-size: 1.9vw;
+  }
+
+  .salary{
+    font-size: 2.3vw;
+  }
+  
+  .about h1{
+    font-size: 2.6vw;
+  }
+  .about h2{
+    font-size: 2.2vw;
+  }
+  .about-desc{
+    font-size: 2.15vw;
+  }
+  
+  .exp h6{
+      font-size: 2.2vw;
+  }
+  .exp p{
+    font-size: 2.2vw;
+  }
+  .btn{
+    font-size: 2.4vw;
+  }
+  .apply{
+     margin-bottom: 1.3vw; 
+    margin-top: 2.3vw;
+  }
+  
+} 
+
+/* styles for screens up to 440 pixels wide go here */
+@media (max-width: 440px){
+
+.container{
+  gap: 7vw;
+  margin-top: 10vw;
+}
+.card{
+  width: 75vw;
+  padding: 3vw;
+   }
+  
+  .card .company-img{
+      width: 20%;
+  }
+  
+  .card-top .company h1{
+    font-size: 3.5vw;
+  }
+  
+  .card-top .company h2{
+    font-size: 4vw;
+  }
+  .card-top .company h3{
+    font-size: 3vw;
+  }
+
+  .salary{
+    font-size: 3.6vw;
+  }
+  
+  .about h1{
+    font-size: 4vw;
+  }
+  .about h2{
+    font-size: 3.7vw;
+  }
+  .about-desc{
+    font-size: 3.4vw;
+  }
+  
+  .exp h6{
+      font-size: 3.4vw;
+      margin-top: 2vw;
+  }
+  .exp p{
+    font-size: 3.4vw;
+    margin-top: -5vw;
+  }
+  .btn{
+    font-size: 3.8vw;
+  }
+  .apply{
+     margin-bottom: 3vw; 
+     padding: 2vw;
+  }
+}
