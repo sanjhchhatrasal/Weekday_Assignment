@@ -1,5 +1,5 @@
 
-Weekday Assignment
+# Weekday Assignment
 This repository contains the codebase for the Weekday Assignment project.
 
 Overview
