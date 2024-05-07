@@ -25,7 +25,7 @@ Install dependencies:
 bash
 Copy code
 npm install
-# or
+ or
 yarn install
 Running the Application
 To start the development server, run:
@@ -33,7 +33,7 @@ To start the development server, run:
 bash
 Copy code
 npm start
-# or
+ or
 yarn start
 The application will be accessible at http://localhost:3000.
 
@@ -43,7 +43,7 @@ To build the application for production deployment, use:
 bash
 Copy code
 npm run build
-# or
+ or
 yarn build
 Contributing
 Contributions to the project are welcome. If you want to contribute, please follow these steps:
