@@ -38,8 +38,7 @@ export const FilterContextProvider = ({ children }) => {
     useEffect(() => {
       dispatch( { type: "LOAD_FILTER_PRODUCTS", payload: jobs } );
     }, [jobs]);
-    
-
+  
     return (
         <FilterContext.Provider value={{ ...state, updateFilterValue }}>
             {children}
