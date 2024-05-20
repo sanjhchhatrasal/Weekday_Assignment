@@ -71,6 +71,7 @@ const filterReducer = (state, action) => {
         ...state,
         filter_jobs: tempFilterJob,
       };
+      
 
     default:
       return state;
