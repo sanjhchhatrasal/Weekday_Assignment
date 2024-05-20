@@ -6,7 +6,6 @@ function Filter() {
     const { filters: { text }, all_jobs, updateFilterValue } = useFilterContext();
 
        const handleChange = (e) => {
-      
        updateFilterValue(e); // Pass the event object directly
        console.log("Input Value:", e.target.value);
       };
