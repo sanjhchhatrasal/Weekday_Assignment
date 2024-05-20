@@ -22,12 +22,10 @@ export const FilterContextProvider = ({ children }) => {
     const { jobs } = useCardContext();
     const [ state, dispatch] = useReducer(reducer, initialState);
 
-
    // update the filter values
   const updateFilterValue = (event) => {
     let name = event.target.name;
     let value = event.target.value;
-
     return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value } });
   };
   
