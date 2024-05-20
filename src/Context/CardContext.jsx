@@ -22,7 +22,6 @@ const initialState = {
     jobs: []
 };
 
-
 const AppProvider = ({children}) => {
 
     const [state, dispatch] = useReducer(reducer, initialState);
