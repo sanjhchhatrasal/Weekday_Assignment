@@ -22,6 +22,7 @@ function App() {
     return <div>Error fetching data</div>;
   } 
   
+  
 
 
 // Change handleToggleDescription to accept index directly
